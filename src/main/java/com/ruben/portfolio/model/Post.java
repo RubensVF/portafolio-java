@@ -28,13 +28,13 @@ public class Post {
     @Temporal(TemporalType.DATE)
     private Calendar date;
     
-    public Post(String title, String content, String description,String image, String slug,Calendar date) {
+    public Post(String title, String content, String description,String image, String slug) {
         this.title = title;
         this.content = content;
         this.description = description;
         this.image = image;
         this.slug = slug;
-        this.date = date;
+        this.date = Calendar.getInstance();
     }
 
     public Long getId() {

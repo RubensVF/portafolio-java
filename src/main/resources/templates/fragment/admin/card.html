@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+
+  <div class="blog-entry justify-content-end" th:fragment="card(id,date,title,description,image,slug)">
+
+    <a th:href="@{/blog/{slug}(slug=${slug})}" class="block-20" th:style="'background-image: url('+${image}+');'">
+    </a>
+    <div class="text mt-3 float-right d-block">
+      <div class="d-flex align-items-center mb-3 meta">
+        <p class="mb-0">
+          <span class="mr-2" th:text="${date}">June 21, 2019</span>
+
+          <a th:href="@{/blog/{slug}(slug=${slug})}" class="meta-chat"><span class="icon-chat"></span> 3</a>
+
+        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+          <li class="ftco-animate"><a
+              th:href="@{/admin/delete(id=${id})}"><span
+                class="icon-delete"></span></a></li>
+          <li class="ftco-animate"><a th:href="@{/admin/edit(id=${id})}"><span class="icon-edit"></span></a>
+          </li>
+        </ul>
+
+        </p>
+
+      </div>
+      <h3 class="heading"><a th:href="@{/blog/{slug}(slug=${slug})}" th:text="${title}"></a>
+      </h3>
+
+      <p th:text="${description}"></p>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

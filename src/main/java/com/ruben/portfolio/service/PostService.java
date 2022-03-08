@@ -22,7 +22,16 @@ public class PostService {
         return pRepository.findBySlug(slug);
     }
 
+    public Post findById(Long id){
+        return pRepository.findById(id).orElse(null);
+    }
+
     public Post save(Post post){
         return pRepository.save(post);
+    }
+
+    public void deleteById(Long id){
+        pRepository.deleteById(id);
+        return;
     }
 }
