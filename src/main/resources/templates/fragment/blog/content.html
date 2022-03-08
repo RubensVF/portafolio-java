@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    
+  <div class="col-lg-8 ftco-animate" th:fragment="content">
+    
+    <div th:remove="tag" th:utext=${post.content}></div>
+
+    <!--
+    <div th:replace="fragment/blog/comments.html"></div>
+    -->
+  
+  </div>
+
+</body>
+</html>
