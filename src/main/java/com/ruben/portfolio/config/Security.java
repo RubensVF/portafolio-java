@@ -12,7 +12,7 @@ public class Security extends WebSecurityConfigurerAdapter{
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-        .antMatchers("/admin/**").hasRole("ADMIN").and().formLogin();
+        .antMatchers("/admins/**").hasRole("ADMIN").and().formLogin();
     }
     
     

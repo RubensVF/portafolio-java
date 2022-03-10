@@ -3,10 +3,10 @@
 
 <body>
 
-  <div class="card card-primary" th:fragment="card(id,title,description)">
+  <div class="card card-primary" th:fragment="card(id,demo,description)">
 
     <div class="card-header">
-      <h5 class="card-title" th:text="${title}">Card title</h5>
+      <a class="card-title" th:href="${demo}">Demo</a>
     </div>
     <div class="card-body">
 
@@ -15,8 +15,8 @@
       </p>
     </div>
     <div class="card-footer">
-      <a th:href="@{/admin/edit(id=${id})}" class="card-link">Edit post</a>
-      <a th:href="@{/admin/delete(id=${id})}" class="card-link">Delete post</a>
+      <a th:href="@{/admin/editproject(id=${id})}" class="card-link">Edit post</a>
+      <a th:href="@{/admin/deleteproject(id=${id})}" class="card-link">Delete post</a>
     </div>
   </div>
 

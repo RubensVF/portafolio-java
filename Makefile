@@ -15,3 +15,5 @@ docker-start:
 
 push: 
 	docker push rubensvf/portafolio:1.0
+
+#docker run --name db -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=posts -d -p 3306:3306 mysql:5.7
