@@ -1,6 +1,0 @@
-INSERT INTO project (image,code,demo,description) VALUES ("https://res.cloudinary.com/rubs1999/image/upload/v1646878848/Blog/skateshop_wxkunw.png","https://github.com/RubensVF/skateshop","http://skateshop.rubenvelazquez.com/customize","Threejs & modelo 3d");
-INSERT INTO project (image,code,demo,description) VALUES ("https://res.cloudinary.com/rubs1999/image/upload/v1646878841/Blog/notas-thymeleaf_gc93rq.png","https://github.com/RubensVF/notes-thymeleaf","http://notes.rubenvelazquez.com/customize","Threejs & modelo 3d");
-INSERT INTO project (image,code,demo,description) VALUES ("https://res.cloudinary.com/rubs1999/image/upload/v1646878842/Blog/inmobiliaria_lazjwk.png","https://github.com/RubensVF/inmobiliaria-client","https://www.youtube.com/watch?v=AqwEmR5z89c","Threejs & modelo 3d");
-INSERT INTO project (image,code,demo,description) VALUES ("https://res.cloudinary.com/rubs1999/image/upload/v1646878842/Blog/blog_vo2qqh.png","https://github.com/RubensVF/blog","https://www.youtube.com/watch?v=pwctCzXzV1E","Threejs & modelo 3d");
-
-INSERT INTO post (title,content,description,image,slug) VALUES ("Docker y Spring Boot","<h2>Hol</h2","Como dockerizas una proyecto de spring boot con mysql paso a paso","https://res.cloudinary.com/rubs1999/image/upload/v1646878842/Blog/docker_e2ykql.jpg","docker-y-spring-boot");
